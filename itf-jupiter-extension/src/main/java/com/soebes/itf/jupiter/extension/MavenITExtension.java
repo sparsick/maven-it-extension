@@ -138,6 +138,7 @@ public class MavenITExtension implements BeforeEachCallback, ParameterResolver, 
       if (!directoryResolverResult.getProjectDirectory().exists()) {
         directoryResolverResult.getProjectDirectory().mkdirs();
         directoryResolverResult.getCacheDirectory().mkdirs();
+        directoryResolverResult.getComponentUnderTestDirectory().mkdirs();
 
         FileUtils.copyDirectory(directoryResolverResult.getSourceMavenProject(),
             directoryResolverResult.getProjectDirectory());
@@ -148,6 +149,7 @@ public class MavenITExtension implements BeforeEachCallback, ParameterResolver, 
       FileUtils.deleteQuietly(directoryResolverResult.getProjectDirectory());
       directoryResolverResult.getProjectDirectory().mkdirs();
       directoryResolverResult.getCacheDirectory().mkdirs();
+      directoryResolverResult.getComponentUnderTestDirectory().mkdirs();
 
       FileUtils.copyDirectory(directoryResolverResult.getSourceMavenProject(),
           directoryResolverResult.getProjectDirectory());
