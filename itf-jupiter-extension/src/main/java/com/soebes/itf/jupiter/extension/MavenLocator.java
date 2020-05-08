@@ -126,7 +126,7 @@ class MavenLocator {
       if (!file.isPresent()) {
         return Optional.empty();
       }
-      return checkExecutableViaPathEnvironment();
+      return file;
     }
     return checkExecutableViaPathEnvironment();
   }
