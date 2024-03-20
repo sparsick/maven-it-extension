@@ -1,1 +1,1 @@
-/opt/hostedtoolcache/jdk/18.0.2/x64/bin/javadoc @options @packages
+/usr/lib/jvm/temurin-21-jdk-amd64/bin/javadoc @options @packages
